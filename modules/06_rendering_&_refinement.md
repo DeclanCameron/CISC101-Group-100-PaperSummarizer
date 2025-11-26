@@ -1,2 +1,12 @@
 ## Module 6: Rendering and Refinement
- This module builds the final user output using everything from the other modules. It produces the Paper Summary, the Section by Section Table, the Expert and Lay summaries, the Mini Glossary and the Checks and Warnings list. Everything should be formatted in clean markdown with clear headings and tables. When a user asks for changes, this module updates only the part the user wants changed without rewriting everything else. It also adds short explanations of any important methods or equations in both technical and simple terms so the expert and lay summaries stay connected.
+Input: All structured data from previous modules.
+
+Process: Build final output in Markdown.
+
+Include: Paper Summary, Section Table, Expert/Lay Summaries, Glossary, Checks/Warnings.
+
+Ensure formatting consistency and word limits.
+
+Allow partial updates when user requests changes.
+
+Output: Final structured summary with synthesis paragraph (<200 words).
