@@ -1,2 +1,14 @@
 ## Module 3: Guardrails
- This module makes sure the summaries stay within the text the user provided. It stops the system from inventing claims, sections, citations or results. It handles missing and very short sections and makes sure the assistant does not overstate anything. If the paper is long, this module can handle chunking the text and recombining the summaries. It uses simple methods like quoting or close paraphrasing when something is uncertain. It also adds internal warnings and flags that will later show up in the Checks and Warnings section for the user.
+Input: Section summaries + raw text.
+
+Process:
+
+Prevent invention of claims, citations, or sections.
+
+Handle missing/short sections transparently.
+
+Chunk/recombine text if paper is long.
+
+Use close paraphrasing or quoting when uncertain.
+
+Output: Verified summaries + internal warnings.
