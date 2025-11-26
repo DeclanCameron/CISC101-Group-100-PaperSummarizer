@@ -1,2 +1,12 @@
 ## Module 1: Intake and Setup
- This module collects all the raw inputs like the section list, the text for each section and the audience type. It checks which sections are missing and which ones are basically empty. It counts the number of words in each section and flags any section under 50 words as very short. After this, it stores everything in a single internal structure similar to a JSON object so the later modules can use the same organized data.
+Input: Raw paper text, section list, audience type.
+
+Process:
+
+Identify missing or empty sections.
+
+Count words per section.
+
+Flag sections under 50 words as “very short.”
+
+Output: Organized internal structure (JSON-like object) with text, metadata, and flags.
