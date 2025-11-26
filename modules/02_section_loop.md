@@ -9,7 +9,7 @@ Process: Check if section is missing or empty, then record warning and skip summ
 
 If present:
 If summary_level = "short"
-then generate a 1–2 sentence summary focusing on the single main idea.
+then generate a 1–2 sentence paragraph style summary focusing on the single main idea.
 
 If summary_level = "detailed"
 then generate a short paragraph focusing on the main idea plus a bullet list of 3–5 key points.
