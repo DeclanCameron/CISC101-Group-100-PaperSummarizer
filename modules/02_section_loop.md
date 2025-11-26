@@ -1,10 +1,17 @@
+> Change Log (2025-11-18):
+> – Updated specifity of behavior based on length of summary
+
 ## Module 2: Section Loop
-Input: Section data from Intake.
 
-Process:
+Input: Section data from Intake + summary_level variable.
 
-If missing/empty → record warning, skip summary.
+Process: Check if section is missing or empty, then record warning and skip summary if so.
 
-If present → generate one-paragraph summary focusing on the single main idea.
+If present:
+If summary_level = "short"
+then generate a 1–2 sentence summary focusing on the single main idea.
 
-Output: Section summaries + warnings stored in shared structure.
+If summary_level = "detailed"
+then generate a short paragraph focusing on the main idea plus a bullet list of 3–5 key points.
+
+Output: Section summaries (mode-dependent) + warnings stored in shared structure.
