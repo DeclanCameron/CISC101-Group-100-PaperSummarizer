@@ -10,9 +10,6 @@ Process: Enforce non-invention rules: prevent creation of claims, citations, equ
 While evidence_mode = "strict":
 Only use claims, results, and equations explicitly found in the provided text.
 
-If enough information is available
-Then output a standardized notice saying: “Insufficient source detail to summarize this section in strict evidence mode.”
-
 #### Handle missing or very short sections:
 If section is missing or empty
 Then record warning: "Section skipped: no usable text"
