@@ -1,14 +1,23 @@
+> Change Log (2025-11-26):
+>  – Strengthened evidence and hallucination guardrails
+
 ## Module 3: Guardrails
-Input: Section summaries + raw text.
 
-Process:
+Input: Section summaries + raw text + evidence_mode flag.
 
-Prevent invention of claims, citations, or sections.
+Process: Enforce non-invention rules: prevent creation of claims, citations, equations, or sections that do not appear in the source text.
 
-Handle missing/short sections transparently.
+While evidence_mode = "strict":
+Only use claims, results, and equations explicitly found in the provided text.
 
-Chunk/recombine text if paper is long.
+#### Handle missing or very short sections:
+If section is missing or empty
+Then record warning: "Section skipped: no usable text"
 
-Use close paraphrasing or quoting when uncertain.
+If section is under 50 words
+Then record warning: “Section very short: summary may be incomplete.”
 
-Output: Verified summaries + internal warnings.
+If paper is long
+Then chunk and recombine text
+
+Output: Verified summaries + standardized warnings.
